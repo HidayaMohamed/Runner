@@ -34,6 +34,14 @@ h1 {
     background-color: #cd7f32;
     border-radius: 8px;
 }
+h5 {
+    font-style: italic;
+    text-decoration: underline;
+    background-color: #a7553c;
+    width: 170px;
+    border-radius: 5px;
+    margin: 15px;
+}
 h4 {
     font-weight: 30px;
     font-style: italic;
@@ -43,37 +51,55 @@ h4 {
     border-radius: 0.5rem;
 }
 form {
-    display: flex;
+
+    display: none;
     flex-direction: column;
     gap: 10px;
     background-color: rgb(190, 183, 173);
     border-radius: 0.5rem;
     width: 400px;
+    height: 520px;
     margin: 10px auto;
     
 }
-input{
-    height: 40px;
-    width: 300px;
-    margin: 10px auto;
+input, #submit{
+    height: 45px;
+    width: 350px;
+    margin: 0 auto;
     padding: 5px;
     border-radius: 0.5rem;
     background-color: #e9e4de;
 }
-input::placeholder {
+input::placeholder{
     font-size: 150%;
     color: black;
 }
 h6{
-font-weight: 30px;
+    font-weight: 30px;
     font-style: italic;
-    margin: 30px auto;
+    font-size: 25px;
+    margin: 10px auto;
     background-color: #d67c53;
-    width: 300px;
+    width: 350px;
     height: 30px;
     border-radius: 0.5rem;
 }
 p {
     font-style: oblique;
-    
+    margin: 15px;
+}
+#signUp {
+    font-weight: 30px;
+    font-style: italic;
+    margin: 20px 470px;
+    background-color: #e93c07e3;
+    height: 50px;
+    width: 300px;
+    border-radius: 0.5rem;
+    font-size: 30px;
+}
+#submit {
+    font-size: 120%;
+    height: 55px;
+    color: black;
 }

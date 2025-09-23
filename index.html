@@ -10,6 +10,7 @@
     <div id="container">
       <main>
         <h1>RUNNER</h1>
+        <h5>About Runner</h5>
         <p>
           Runner App is a lightweight fitness companion that lets you explore a
           list of passionate runners and the company founders who guide them.
@@ -23,35 +24,43 @@
         </p>
         <h4>Why Join Runner?</h4>
         <p>
-          Whatever your current or desired fitness levels, we’ll give you
-          the support and guidance you need to reach your goals.
+          Whatever your current or desired fitness levels, we’ll give you the
+          support and guidance you need to reach your goals.
         </p>
-        <h4>Sign Up for Runner</h4>
-        <form >
-            <h6>Enter your details down below</h6>
-         
-            <input type="text" id="name" placeholder="Full name">
-            <input type="text" id="image" placeholder="image URL">
-            <input type="number" id="age" placeholder="Age">
-            <input type="text" id="blood-type" placeholder="Blood type">
-            <input type="text" id="experience" placeholder="Running Experience in years">
-            <input type="text" id="pr" placeholder="5Km pr">
-            <input type="number" id="races" placeholder="Number of races participated in">
+        <button id="signUp">Sign Up for Runner</button>
+        <form>
+          <h6>Enter your details down below</h6>
 
+          <input type="text" id="name" placeholder="Full name" />
+          <input type="text" id="image" placeholder="image URL" />
+          <input type="number" id="age" placeholder="Age" />
+          <input type="text" id="blood-type" placeholder="Blood type" />
+          <input
+            type="text"
+            id="experience"
+            placeholder="Running Experience in years"
+          />
+          <input type="text" id="pr" placeholder="5Km pr" />
+          <input
+            type="number"
+            id="races"
+            placeholder="Number of races participated in"
+          />
+          <button type="submit" id="submit">Submit</button>
         </form>
       </main>
       <aside>
         <h2>founders</h2>
         <h5 id="name"></h5>
-        <img id="image" src="" alt="Founder's image">
+        <img id="image" src="" alt="Founder's image" />
         <section id="age">Age:</section>
-        <section id="educationLevel">Education Level</section>
-        <p id="description">Brief introduction: </p>
+        <section id="educationLevel">Education Level:</section>
+        <p id="description">Brief introduction:</p>
 
         <h3>Members</h3>
         <button id="Members">View members</button>
         <div id="membersList">
-            <ul id="list"></ul>
+          <ul id="list"></ul>
         </div>
       </aside>
     </div>
