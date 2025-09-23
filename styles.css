@@ -58,14 +58,15 @@ form {
     background-color: rgb(190, 183, 173);
     border-radius: 0.5rem;
     width: 400px;
-    height: 520px;
+    height: 450px;
     margin: 10px auto;
     
 }
 input, #submit{
     height: 45px;
     width: 350px;
-    margin: 0 auto;
+    margin-left: 22px;
+    margin-top: 5px;
     padding: 5px;
     border-radius: 0.5rem;
     background-color: #e9e4de;
