@@ -128,3 +128,33 @@ h2 {
       border-radius: 8px;
       background-color: #e49e44;
 }
+#userReview {
+    display: flex;
+    margin: 50px;
+}
+#Rev {
+    margin-left: 50px;
+    background-color: rgb(38, 122, 122);
+    width: 300px ;
+    height: 300px;
+    margin-top: 50px;
+    padding-top: 80px;
+    text-align: center;
+    border-radius: 1rem;
+}
+#comments {
+    margin-right: 50px;
+    color: #e9e4de;
+    background-color: rgb(71, 49, 49);
+    font-size: 80%;
+    width: 550px;
+    border-radius: 1rem;
+    border: 5px;
+    border: #ddd;
+    
+}
+#comments h5{
+    color: #e9e4de;
+    background-color: rgb(71, 49, 49);
+}
+

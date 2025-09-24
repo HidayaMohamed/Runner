@@ -12,18 +12,46 @@ const membersList = document.getElementById("membersList");
 const trainersList = document.getElementById("trainersList");
 
 // Creates variables for the Founder section
+const founderName = document.getElementById("fullName");
+const founderImage = document.getElementById("founderImage");
+const founderAge = document.getElementById("founderAge");
+const educationLevel = document.getElementById("educationLevel");
+const description = document.getElementById("description");
 
 // Creates variables for the trainer information
+const TrainerName = document.getElementById("TrainerName");
+const ImageTrainer = document.getElementById("ImageTrainer");
+const trainerAge = document.getElementById("trainerAge");
+const trainerEducationLevel = document.getElementById("trainerEducationLevel");
+const TrainerWorkingExperience = document.getElementById(
+  "TrainerWorkingExperience"
+);
+const trainerDescription = document.getElementById("trainerDescription");
 
 // Creates variables to store member information
-const memberName = document.getElementById("name");
+const memberName = document.getElementById("memberName");
 const memberImage = document.getElementById("memberImage");
 const memberAge = document.getElementById("memberAge");
-const bloodType = document.getElementById("blood-type");
-const experience = document.getElementById("experience");
+const bloodType = document.getElementById("member-blood-type");
+const runningExperience = document.getElementById("runningExperience");
 const fiveKmPr = document.getElementById("5kmPr");
-const races = document.getElementById("races");
+const numberOfRaces = document.getElementById("numberOfRaces");
 const review = document.getElementById("review");
+
+// Creates variables that store form input and submit button
+const name = document.getElementById("name")
+const image = document.getElementById("image")
+const age = document.getElementById("age")
+const NewBloodType = document.getElementById("blood-type")
+const experience = document.getElementById("experience")
+const pr = document.getElementById("pr")
+const races = document.getElementById("races")
+const submitBtn = document.getElementById("submit")
+
+
+    
+
+
 
 function displayOnClick(Btn, element) {
   Btn.addEventListener("click", () => {
@@ -43,16 +71,9 @@ function fetchFounder() {
     });
 }
 function displayFounder(founder) {
-  const founderName = document.getElementById("fullName");
-  const image = document.getElementById("image");
-  const age = document.getElementById("age");
-  const educationLevel = document.getElementById("educationLevel");
-  const description = document.getElementById("description");
-
   founderName.textContent = founder.fullName;
-  image.src = founder.image;
-  image.alt = founder.fullName;
-  age.textContent = founder.age;
+  founderImage.src = founder.image;
+  founderAge.innerHTML = founder.age;
   educationLevel.textContent = founder.educationLevel;
   description.textContent = founder.description;
 }
@@ -73,16 +94,14 @@ function renderTrainer(trainer) {
 }
 
 function displayTrainer(trainer) {
-  const TrainerName = document.getElementById("TrainerName");
-  const ImageTrainer = document.getElementById("ImageTrainer");
-  const trainerAge = document.getElementById("trainerAge");
-  const trainerEducationLevel = document.getElementById(
-    "trainerEducationLevel"
-  );
-  const TrainerWorkingExperience = document.getElementById(
-    "TrainerWorkingExperience"
-  );
-  const trainerDescription = document.getElementById("trainerDescription");
+  if (
+    TrainersInfo.style.display === "none" ||
+    TrainersInfo.style.display === ""
+  ) {
+    TrainersInfo.style.display = "block";
+  } else {
+    TrainersInfo.style.display = "none";
+  }
 
   TrainerName.textContent = trainer.fullName;
   ImageTrainer.src = trainer.image;
@@ -97,28 +116,41 @@ function fetchMembers() {
   fetch(" http://localhost:3000/members")
     .then((res) => res.json())
     .then((members) => {
-      members.forEach((member) => renderMembers(member));
+      members.forEach((member) => renderMember(member));
     });
 }
 
-function renderMembers(member) {
+function renderMember(member) {
   const li = document.createElement("li");
   li.textContent = member.name;
-  li.addEventListener("click", displayMember(member));
+  li.addEventListener("click", () => {
+    displayMember(member);
+  });
   membersList.appendChild(li);
 }
 
 function displayMember(member) {
+  if (
+    membersInfo.style.display === "none" ||
+    membersInfo.style.display === ""
+  ) {
+    membersInfo.style.display = "block";
+  } else {
+    membersInfo.style.display = "none";
+  }
+
   memberName.textContent = member.name;
   memberImage.src = member.image;
   memberImage.alt = member.name;
   memberAge.textContent = member.age;
   bloodType.textContent = member.bloodType;
-  experience.textContent = member.runningExperience;
+  runningExperience.textContent = member.runningExperience;
   fiveKmPr.textContent = member.fiveKmPR;
-  races.textContent = member.races;
+  numberOfRaces.textContent = member.races;
   review.textContent = member.review;
 }
+
+
 
 fetchFounder();
 fetchTrainers();
