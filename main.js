@@ -1,10 +1,22 @@
-const signUp = document.getElementById("signUp")
-const form = document.getElementById("form")
+const signUp = document.getElementById("signUp");
+const form = document.getElementById("form");
+const TrainersInfo = document.getElementById("TrainersInfo");
+const membersInfo = document.getElementById("membersInfo");
+const trainers = document.getElementById("trainers");
+const members = document.getElementById("members");
+const TrainersBtn = document.getElementById("TrainersBtn");
+const MembersBtn = document.getElementById("MembersBtn");
 
-signUp.addEventListener("click", () => {
-    if (form.style.display === "none" || form.style.display === "") {
-        form.style.display = "block"
+function displayOnClick(Btn, element) {
+  Btn.addEventListener("click", () => {
+    if (element.style.display === "none" || element.style.display === "") {
+      element.style.display = "block";
     } else {
-        form.style.display = "none"
-    } 
-})
+      element.style.display = "none";
+    }
+  });
+}
+
+displayOnClick(MembersBtn, members);
+displayOnClick(signUp, form);
+displayOnClick(TrainersBtn, trainers)
