@@ -87,7 +87,7 @@ p {
     font-style: oblique;
     margin: 15px;
 }
-#signUp, #Members {
+#signUp, #MembersBtn, #TrainersBtn {
     font-weight: 30px;
     font-style: italic;
     margin: 20px 470px;
@@ -111,4 +111,7 @@ h2 {
     border-bottom: #e9e4de;
     width:200px;
     margin: 50px auto;
+}
+#MembersBtn, #TrainersBtn{
+    margin-left: 10px;
 }
