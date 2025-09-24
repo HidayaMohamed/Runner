@@ -38,8 +38,8 @@ function displayOnClick(Btn, element) {
 function fetchFounder() {
   fetch("http://localhost:3000/founder")
     .then((res) => res.json())
-    .then((founder) => {
-      displayFounder(founder);
+    .then((founderArr) => {
+      displayFounder(founderArr[0]);
     });
 }
 function displayFounder(founder) {
