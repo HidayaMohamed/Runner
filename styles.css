@@ -112,6 +112,6 @@ h2 {
     width:200px;
     margin: 50px auto;
 }
-#MembersBtn, #TrainersBtn{
-    margin-left: 10px;
+#TrainersInfo, #membersInfo, #trainers, #members {
+    display: none;
 }
