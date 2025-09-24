@@ -1,5 +1,5 @@
 {
-    "founders": [
+    "founder": [
         {
             "id": 1,
             "fullName": "Dr. Amina Hassan",
@@ -7,7 +7,9 @@
             "age": 42,
             "educationLevel": "PhD in Exercise Science",
             "description": "Amina is the head of research and development at the fitness company. She specializes in sports physiology and designs evidence-based training programs to optimize athlete performance."
-        },
+        }
+    ],
+    "trainers": [
         {
             "id": 2,
             "fullName": "Michael Otieno",
