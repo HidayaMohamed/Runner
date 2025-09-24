@@ -50,7 +50,8 @@ function displayFounder(founder) {
   const description = document.getElementById("description");
 
   founderName.textContent = founder.fullName;
-  image.src = founder.image;
+    image.src = founder.image;
+    image.alt = founder.fullName
   age.textContent = founder.age;
   educationLevel.textContent = founder.educationLevel;
   description.textContent = founder.description;
