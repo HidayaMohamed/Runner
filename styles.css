@@ -116,7 +116,7 @@ h2 {
     display: none;
 }
 #trainersList li, #membersList li {
-    padding: 8px;
+      padding: 8px;
       cursor: pointer;
       border-bottom: 1px solid #ddd;
       display: flex;
@@ -125,5 +125,5 @@ h2 {
       justify-content: space-between;
       align-items: center;
       border-radius: 8px;
-      background-color: #bebaaa;
+      background-color: #e49e44;
 }
