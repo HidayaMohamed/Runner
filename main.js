@@ -104,11 +104,11 @@ function fetchMembers() {
 function renderMembers(member) {
   const li = document.createElement("li");
   li.textContent = member.name;
-  li.addEventListener("click", displayMembers(member));
+  li.addEventListener("click", displayMember(member));
   membersList.appendChild(li);
 }
 
-function displayMembers(member) {
+function displayMember(member) {
   memberName.textContent = member.name;
   memberImage.src = member.image;
   memberImage.alt = member.name;
