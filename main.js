@@ -88,15 +88,11 @@ function fetchTrainers() {
 
 function renderTrainer(trainer) {
   const li = document.createElement("li");
-    li.textContent = trainer.fullName;
-    li.addEventListener("mouseover", over())
+  li.textContent = trainer.fullName;
   li.addEventListener("click", () => displayTrainer(trainer));
   trainersList.appendChild(li);
 }
-function over() {
-   
 
-}
 function displayTrainer(trainer) {
   if (
     TrainersInfo.style.display === "none" ||
