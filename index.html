@@ -9,7 +9,8 @@
   <body>
     <div id="container">
       <main>
-        <h1>RUNNER</h1>
+        <h3>RUNNER</h3>
+        <h1>Take your running to the <span class="h1">next level</span></h1>
         <h5>About Runner</h5>
         <p>
           Runner App is a lightweight fitness companion that lets you explore a
@@ -27,16 +28,28 @@
           Whatever your current or desired fitness levels, we’ll give you the
           support and guidance you need to reach your goals.
         </p>
-        <div id="userReview">
-          <div id="Rev">
-          <h3>Reviews from users -> </h5>
+        <button id="TrainersBtn">View trainers</button>
+        <div id="trainers">
+          <h4>Trainers</h4>
+          <ul id="trainersList"></ul>
         </div>
-        <div id="comments">
-          <h5>Lydia Wanjiru</h5>
-          <p class="Comments">“Runner is a game-changer for runners! The personalized training plans are incredibly effective, helping me improve my pace and endurance in just weeks. The community is welcoming, motivating, and backed by expert coaching. If you’re serious about running faster and smarter, Runner is a must-join! ”</p>
-          <h5>Joseph Kamau</h5>
-          <p class="Comments">"Great personalized running plan so I can really be intentional with my training! The Runna team have all been super responsive and helpful making sure the plan and paces are right for me, and there to answer any questions. Great value, would highly recommend!"</p>
-        </div>
+
+        <div id="TrainersInfo">
+          <h6 id="TrainerName"></h6>
+          <img id="ImageTrainer" src="" alt="" />
+          <p><strong>Age:</strong><span id="trainerAge"></span></p>
+          <p>
+            <strong>Education level</strong
+            ><span id="trainerEducationLevel"></span>
+          </p>
+          <p>
+            <strong>Years worked as a trainer:</strong
+            ><span id="TrainerWorkingExperience"></span>
+          </p>
+          <p>
+            <strong>Brief introduction:</strong
+            ><span id="trainerDescription"></span>
+          </p>
         </div>
 
         <button id="MembersBtn">View members</button>
@@ -79,8 +92,6 @@
           />
           <button type="submit" id="submit">Submit</button>
         </form>
-      </main>
-      <aside>
         <h2>Founder</h2>
         <h4 id="fullName"></h4>
         <img id="founderImage" src="" alt="Founder image" width="600px" height="600px" />
@@ -91,29 +102,19 @@
         <p>
           <strong>Brief introduction:</strong><span id="description"></span>
         </p>
-
-        <button id="TrainersBtn">View trainers</button>
-        <div id="trainers">
-          <h4>Trainers</h4>
-          <ul id="trainersList"></ul>
+      </main>
+       
+      <aside>
+        <div id="userReview">
+          <div id="Rev">
+          <h3>Reviews from users -> </h5>
         </div>
-
-        <div id="TrainersInfo">
-          <h6 id="TrainerName"></h6>
-          <img id="ImageTrainer" src="" alt="" />
-          <p><strong>Age:</strong><span id="trainerAge"></span></p>
-          <p>
-            <strong>Education level</strong
-            ><span id="trainerEducationLevel"></span>
-          </p>
-          <p>
-            <strong>Years worked as a trainer:</strong
-            ><span id="TrainerWorkingExperience"></span>
-          </p>
-          <p>
-            <strong>Brief introduction:</strong
-            ><span id="trainerDescription"></span>
-          </p>
+        <div id="comments">
+          <h5>Lydia Wanjiru</h5>
+          <p class="Comments">“Runner is a game-changer for runners! The personalized training plans are incredibly effective, helping me improve my pace and endurance in just weeks. The community is welcoming, motivating, and backed by expert coaching. If you’re serious about running faster and smarter, Runner is a must-join! ”</p>
+          <h5>Joseph Kamau</h5>
+          <p class="Comments">"Great personalized running plan so I can really be intentional with my training! The Runna team have all been super responsive and helpful making sure the plan and paces are right for me, and there to answer any questions. Great value, would highly recommend!"</p>
+        </div>
         </div>
       </aside>
     </div>
