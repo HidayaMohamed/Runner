@@ -4,15 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RUNNER</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="container">
-      <main>
         <h3>RUNNER</h3>
-        <h1>Take your running to the <span class="h1">next level</span></h1>
-        <h5>About Runner</h5>
-        <p>
+        <div class="heading">
+          <h1>Take your running to the <span class="h1">next level</span></h1>
+          <p id="p1">
+            Whatever your current or desired fitness levels, we'll give you the
+            support and guidance you need to reach your goals.
+          </p>
+        </div>
+        <div class="Join">
+          <h4>Why Join Runner?</h4>
+        </div>
+        <div class="trainers">
+          <button id="TrainersBtn">View trainers</button>
+          <div id="trainers">
+            <h4 id="h4">Trainers</h4>
+            <ul id="trainersList"></ul>
+          </div>
+          <div id="TrainersInfo">
+            <h6 id="TrainerName"></h6>
+            <img id="ImageTrainer" src="" alt="" />
+            <p><strong>Age:</strong><span id="trainerAge"></span></p>
+            <p>
+            <strong>Education level</strong><span id="trainerEducationLevel"></span>
+            </p>
+            <p>
+            <strong>Years worked as a trainer:</strong><span id="TrainerWorkingExperience"></span>
+            </p>
+            <p>
+            <strong>Brief introduction:</strong
+            ><span id="trainerDescription"></span>
+            </p>
+          </div>
+        </div>
+        <div class="members">
+          <button id="MembersBtn">View members</button>
+          <div id="members">
+            <h6>Memebers</h6>
+            <ul id="membersList"></ul>
+          </div>
+          <div id="membersInfo">
+            <h5 id="memberName"></h5>
+            <img id="memberImage" src="" alt="" />
+            <p><strong>Age:</strong><span id="memberAge"></span></p>
+             <p><strong>Blood type:</strong><span id="member-blood-type"></span></p>
+            <p>
+            <strong>Running experience:</strong><span id="runningExperience"></span>
+            </p>
+            <p><strong>Five Km Pr:</strong><span id="5kmPr"></span></p>
+            <p><strong>Races:</strong><span id="numberOfRaces"></span></p>
+            <p><strong>Review:</strong><span id="review"></span></p>
+            </div>
+        </div>
+        <div class="form">
+          <button id="signUp">Sign Up for Runner</button>
+          <form id="form">
+            <h6>Enter your details down below</h6>
+            <input type="text" id="name" placeholder="Full name" />
+            <input type="text" id="image" placeholder="image URL" />
+            <input type="number" id="age" placeholder="Age" />
+            <input type="text" id="blood-type" placeholder="Blood type" />
+            <input
+              type="text"
+              id="experience"
+              placeholder="Running Experience in years"
+             />
+            <input type="text" id="pr" placeholder="5Km pr" />
+            <input
+              type="number"
+              id="races"
+              placeholder="Number of races participated in"
+            />
+            <button type="submit" id="submit">Submit</button>
+          </form>
+        </div>
+        <div class="founder">
+          <button id="founderBtn">View founder</button>
+          <div id="founderDiv">
+            <h2>Founder</h2>
+          <h4 id="fullName"></h4>
+          <img id="founderImage" src="" alt="Founder image" width="600px" height="600px" />
+          <p><strong>Age:</strong><span id="founderAge"></span></p>
+          <p>
+          <strong>Education level:</strong><span id="educationLevel"></span>
+          </p>
+          <p>
+          <strong>Brief introduction:</strong><span id="description"></span>
+          </p>
+          </div>
+       </div>
+      
+       <div id="about">
+          <h5>About Runner</h5>
+          <p>
           Runner App is a lightweight fitness companion that lets you explore a
           list of passionate runners and the company founders who guide them.
           Each runner has their own profile with personal stats like age, blood
@@ -22,101 +110,19 @@
           about the experts behind the fitness company. The app is designed to
           be simple, interactive, and motivating for anyone interested in
           running and fitness.
-        </p>
-        <h4>Why Join Runner?</h4>
-        <p>
-          Whatever your current or desired fitness levels, we’ll give you the
-          support and guidance you need to reach your goals.
-        </p>
-        <button id="TrainersBtn">View trainers</button>
-        <div id="trainers">
-          <h4>Trainers</h4>
-          <ul id="trainersList"></ul>
-        </div>
-
-        <div id="TrainersInfo">
-          <h6 id="TrainerName"></h6>
-          <img id="ImageTrainer" src="" alt="" />
-          <p><strong>Age:</strong><span id="trainerAge"></span></p>
-          <p>
-            <strong>Education level</strong
-            ><span id="trainerEducationLevel"></span>
-          </p>
-          <p>
-            <strong>Years worked as a trainer:</strong
-            ><span id="TrainerWorkingExperience"></span>
-          </p>
-          <p>
-            <strong>Brief introduction:</strong
-            ><span id="trainerDescription"></span>
-          </p>
-        </div>
-
-        <button id="MembersBtn">View members</button>
-
-        <div id="members">
-          <h6>Memebers</h6>
-          <ul id="membersList"></ul>
-        </div>
-        <div id="membersInfo">
-          <h5 id="memberName"></h5>
-          <img id="memberImage" src="" alt="" />
-          <p><strong>Age:</strong><span id="memberAge"></span></p>
-          <p><strong>Blood type:</strong><span id="member-blood-type"></span></p>
-          <p>
-            <strong>Running experience:</strong><span id="runningExperience"></span>
-          </p>
-          <p><strong>Five Km Pr:</strong><span id="5kmPr"></span></p>
-          <p><strong>Races:</strong><span id="numberOfRaces"></span></p>
-          <p><strong>Review:</strong><span id="review"></span></p>
-        </div>
-
-        <button id="signUp">Sign Up for Runner</button>
-        <form id="form">
-          <h6>Enter your details down below</h6>
-
-          <input type="text" id="name" placeholder="Full name" />
-          <input type="text" id="image" placeholder="image URL" />
-          <input type="number" id="age" placeholder="Age" />
-          <input type="text" id="blood-type" placeholder="Blood type" />
-          <input
-            type="text"
-            id="experience"
-            placeholder="Running Experience in years"
-          />
-          <input type="text" id="pr" placeholder="5Km pr" />
-          <input
-            type="number"
-            id="races"
-            placeholder="Number of races participated in"
-          />
-          <button type="submit" id="submit">Submit</button>
-        </form>
-        <h2>Founder</h2>
-        <h4 id="fullName"></h4>
-        <img id="founderImage" src="" alt="Founder image" width="600px" height="600px" />
-        <p><strong>Age:</strong><span id="founderAge"></span></p>
-        <p>
-          <strong>Education level:</strong><span id="educationLevel"></span>
-        </p>
-        <p>
-          <strong>Brief introduction:</strong><span id="description"></span>
-        </p>
-      </main>
-       
-      <aside>
-        <div id="userReview">
+         </p>
+       </div>
+       <div id="userReview">
           <div id="Rev">
-          <h3>Reviews from users -> </h5>
-        </div>
-        <div id="comments">
-          <h5>Lydia Wanjiru</h5>
-          <p class="Comments">“Runner is a game-changer for runners! The personalized training plans are incredibly effective, helping me improve my pace and endurance in just weeks. The community is welcoming, motivating, and backed by expert coaching. If you’re serious about running faster and smarter, Runner is a must-join! ”</p>
-          <h5>Joseph Kamau</h5>
-          <p class="Comments">"Great personalized running plan so I can really be intentional with my training! The Runna team have all been super responsive and helpful making sure the plan and paces are right for me, and there to answer any questions. Great value, would highly recommend!"</p>
-        </div>
-        </div>
-      </aside>
+            <h3>Reviews from users -> </h5>
+          </div>
+          <div id="comments">
+            <h5>Lydia Wanjiru</h5>
+            <p class="Comments">“Runner is a game-changer for runners! The personalized training plans are incredibly effective, helping me improve my pace and endurance in just weeks. The community is welcoming, motivating, and backed by expert coaching. If you’re serious about running faster and smarter, Runner is a must-join! ”</p>
+            <h5>Joseph Kamau</h5>
+            <p class="Comments">"Great personalized running plan so I can really be intentional with my training! The Runna team have all been super responsive and helpful making sure the plan and paces are right for me, and there to answer any questions. Great value, would highly recommend!"</p>
+          </div>
+       </div>
     </div>
     <script src="main.js"></script>
   </body>

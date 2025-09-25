@@ -6,8 +6,10 @@ const trainers = document.getElementById("trainers");
 const members = document.getElementById("members");
 const TrainersBtn = document.getElementById("TrainersBtn");
 const MembersBtn = document.getElementById("MembersBtn");
+const founderBtn = document.getElementById("founderBtn");
+const founderDiv = document.getElementById("founderDiv");
 
-// Creates variables that store the ul
+// Creates variables that store the uls
 const membersList = document.getElementById("membersList");
 const trainersList = document.getElementById("trainersList");
 
@@ -39,17 +41,15 @@ const numberOfRaces = document.getElementById("numberOfRaces");
 const review = document.getElementById("review");
 
 // Creates variables that store form input and submit button
-const name = document.getElementById("name")
-const image = document.getElementById("image")
-const age = document.getElementById("age")
-const NewBloodType = document.getElementById("blood-type")
-const experience = document.getElementById("experience")
-const pr = document.getElementById("pr")
-const races = document.getElementById("races")
-const submitBtn = document.getElementById("submit")
+const name = document.getElementById("name");
+const image = document.getElementById("image");
+const age = document.getElementById("age");
+const NewBloodType = document.getElementById("blood-type");
+const experience = document.getElementById("experience");
+const pr = document.getElementById("pr");
+const races = document.getElementById("races");
+const submitBtn = document.getElementById("submit");
 
-
-    
 
 
 
@@ -150,8 +150,6 @@ function displayMember(member) {
   review.textContent = member.review;
 }
 
-
-
 fetchFounder();
 fetchTrainers();
 fetchMembers();
@@ -159,3 +157,4 @@ fetchMembers();
 displayOnClick(MembersBtn, members);
 displayOnClick(signUp, form);
 displayOnClick(TrainersBtn, trainers);
+displayOnClick(founderBtn, founderDiv);
