@@ -8,9 +8,10 @@ body{
 }
 .heading, .Join, .trainers, .members, .form, .founder, #about, #userReview {
     display: block;
-    border-radius: 1rem;
+   
 } 
 .heading {
+    margin-top: 0px;
     background-color: rgb(66, 60, 60);
     padding-bottom: 5px;
 }
@@ -165,7 +166,7 @@ h4, h5{
     background-color: honeydew;
     color: black;
 }
-#TrainersInfo, #membersInfo, #trainers, #members, #founderDiv{
+#TrainersInfo, #membersInfo, #trainers, #members, #founderDiv, #search{
     color: azure;
     font-size: 30px;
     display: none;
@@ -230,6 +231,9 @@ input::placeholder{
     font-size: 25px;
     color: black;
 }
+#searchMember, #name, #age, #blood-type, #experience, #pr, #races {
+    font-size: 25px;
+} 
 #submit {
     font-size: 25px;
     height: 55px;
@@ -271,4 +275,9 @@ h2 {
     font-size: 30px;
     width: 700px;   
     margin-top: 10px;
+}
+#searchBtn {
+    font-size: 20px;
+    width: 100px;
+    height: 30px;
 }

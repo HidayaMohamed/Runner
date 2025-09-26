@@ -9,6 +9,7 @@ const TrainersBtn = document.getElementById("TrainersBtn");
 const MembersBtn = document.getElementById("MembersBtn");
 const founderBtn = document.getElementById("founderBtn");
 const founderDiv = document.getElementById("founderDiv");
+const searchDiv = document.getElementById("search")
 
 // Creates variables that store the uls
 const membersList = document.getElementById("membersList");
@@ -231,3 +232,4 @@ displayOnClick(MembersBtn, members);
 displayOnClick(signUp, form);
 displayOnClick(TrainersBtn, trainers);
 displayOnClick(founderBtn, founderDiv);
+displayOnClick(MembersBtn, searchDiv)
