@@ -4,21 +4,21 @@
 }
 body{
     margin: 10px auto;
-    background-image: url(https://plus.unsplash.com/premium_photo-1686600168384-54f395fba1a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGJsYWNrJTIwYmFja2dyb3VuZCUyMHdpdGglMjBtYXJibGVzfGVufDB8fDB8fHww);
+    background-image: url();
 }
 .heading, .Join, .trainers, .members, .form, .founder, #about, #userReview {
     display: block;
-    margin-top: 25px ;
     border-radius: 1rem;
 } 
 .heading {
     background-color: rgb(66, 60, 60);
+    padding-bottom: 5px;
 }
-.join {
-    background-color: #141413;
+.Join {
+    background-color: #63632f;
 }
 .trainers {
-    background-color: blue;
+    background-color: rgb(96, 96, 138);
 }
 .members{
     background-color: aliceblue;
@@ -34,52 +34,125 @@ body{
     display: flex;
 }
 #Rev {
-    margin-left: 50px;
+    margin-left:50px;
+    margin-top: 75px;
     background-color: rgb(38, 122, 122);
-    width: 300px ;
-    height: 300px;
+    width: 600px ;
+    height: 400px;
     margin-bottom: 10px;
-    padding-top: 80px;
+    padding-top: 100px;
+    padding-left: 150px;
     text-align: center;
     border-radius: 1rem;
+}
+#Rev > h3 {
+    width: 300px;
+    font-size: 40px;
 }
 #comments {
     margin-right: 50px;
     color: #e9e4de;
     background-color: rgb(235, 186, 186);
     font-size: 80%;
-    width: 550px;
+    width: 700px;
+    height: 600px;
+    margin-top: 10px;
     border-radius: 1rem;
-    border: 5px;
-    border: #ddd;
-    
 }
+.Comments {
+    font-size: 25px;
+}
+
 #about{
     background-color: #e9d7cf;
-    border-radius: 1rem;   
+    border-radius: 1rem; 
+    padding-bottom: 20px;  
+}
+h3 {
+    color: cornsilk;
+    width: 150px;
+    font-size: 30px;
+    text-decoration: underline;
+    font-style: italic;
+    margin-left: 10px;
+
 }
 h1 {
+    font-size: 70px;
     font-weight: 50px;
     font-style: italic;
     margin: 30px auto;
+    color: aliceblue;
     text-decoration: underline;
-    width: 350px;
+    width: 700px;
     text-align: center;
 }
 .h1  {
     color: salmon;
 }
+#p1 {
+    font-size: 30px;
+    color: floralwhite;
+    text-align: center;
+    margin-bottom: 50px;
 
+}
+.Join > h4 {
+    font-size: 40px;
+    color: gold;
+}
+#p2 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.point {
+    color: azure;
+    text-decoration: underline;
+    font-size: 40px;
+    margin: 15px 30px;
+}
+#h4 {
+   font-size: 50px;
+   color: #ddd;
+   text-decoration: underline;
+}
+#p3 {
+    color: bisque;
+    font-size: 30px;
+}
+.T {
+   display: flex;
+   gap: 150px;
+}
+h4, h5{
+    font-style: italic;
+    font-size: 50px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+} 
+#p4, #p5, #p6, #p7{
+    margin: 20px;
+    font-size: 30px;
+}
+#p5, #p6 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 35px;
+}
 #signUp, #MembersBtn, #TrainersBtn, #founderBtn {
     font-weight: 30px;
     font-style: italic;
-    margin: 10px 470px;
-    height: 50px;
-    width: 300px;
-    border-radius: 0.5rem;
-    font-size: 20px;
+    margin: 30px 1000px;
+    height: 70px;
+    width: 400px;
+    border-radius: 1.5rem;
+    font-size: 30px;
 }
 #signUp {
+    color: white;
     background-color: rgb(136, 120, 95);
 }
 #MembersBtn {
@@ -93,27 +166,55 @@ h1 {
     color: black;
 }
 #TrainersInfo, #membersInfo, #trainers, #members, #founderDiv {
+    color: azure;
+    font-size: 30px;
     display: none;
+
+}
+
+#founderDiv{
+    width: 900px;
+    font-size: 30px;
+    margin-left: 500px;
+}
+#TrainersInfo {
+    width: 800px;
+    margin-left: 300px;
+    margin-top: 0px;
+}
+#membersInfo {
+    width: 800px;
+    margin-left: 150px;
 }
 #trainersList li, #membersList li {
       cursor: pointer;
-      border-bottom: 1px solid #ddd;
       display: flex;
+      width: 300px;
+      height: 40px;
       margin: 10px;
-      width: 100px;
-      font-size: 75%;
-      justify-content: space-between;
-      align-items: center;
+      margin-top: 60px;
+      margin-bottom: 10px;
+      font-size: 30px;
       border-radius: 8px;
-      background-color: #3f7070;
+      padding-left: 10px;
+      padding-bottom: 10px;
+      background-color: #9dcdec;
+}
+#membersList  {
+    margin-top: 100px;
+}
+#membersList li {
+    
+     margin-top: 0px;
 }
 form {
     display: none;
     background-color: rgb(190, 183, 173);
     border-radius: 0.5rem;
     width: 400px;
-    height: 475px;
+    height: 600px;
     margin: 10px auto;
+    margin-bottom: 30px;
     
 }
 input, #submit{
@@ -121,16 +222,54 @@ input, #submit{
     width: 350px;
     margin-left: 22px;
     margin-top: 5px;
+    margin-bottom: 10px;
     padding: 5px;
     border-radius: 0.5rem;
     background-color: #e9e4de;
 }
 input::placeholder{
-    font-size: 100%;
+    font-size: 25px;
     color: black;
 }
 #submit {
-    font-size: 120%;
+    font-size: 25px;
     height: 55px;
     color: black;
+}
+h5 {
+    font-style: italic;
+    text-decoration: underline;
+    border-radius: 5px;
+    margin: 15px;
+}
+h6 {
+    font-weight: 30px;
+    font-style: italic;
+    margin: 30px auto;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+    border-radius: 0.5rem;
+}
+
+p {
+    font-style: oblique;
+    margin: 15px;
+}
+h2 {
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 50px;
+    background-color: #e9627f;
+    border-radius: 5px;
+    border-bottom: #e9e4de;
+    width:200px;
+    margin: 50px auto;
+}
+#Contact {
+    background-color: burlywood;
+    border-radius: 1rem;
+    font-size: 30px;
+    width: 700px;   
+    margin-top: 10px;
 }
