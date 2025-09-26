@@ -165,13 +165,12 @@ h4, h5{
     background-color: honeydew;
     color: black;
 }
-#TrainersInfo, #membersInfo, #trainers, #members, #founderDiv {
+#TrainersInfo, #membersInfo, #trainers, #members, #founderDiv{
     color: azure;
     font-size: 30px;
     display: none;
 
 }
-
 #founderDiv{
     width: 900px;
     font-size: 30px;

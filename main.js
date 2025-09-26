@@ -1,3 +1,4 @@
+// this variables store buutons and divs 
 const signUp = document.getElementById("signUp");
 const form = document.getElementById("form");
 const TrainersInfo = document.getElementById("TrainersInfo");
@@ -52,7 +53,7 @@ const submitBtn = document.getElementById("submit");
 
 // Function to handle new member form submission
 function addMember(e) {
-  e.preventDefault(); // prevent page reload
+  e.preventDefault(); 
 
   // Create a new member object from the form inputs
   const newMember = {
@@ -63,7 +64,6 @@ function addMember(e) {
     runningExperience: experience.value,
     fiveKmPR: pr.value,
     races: races.value,
-    review: "New member – no reviews yet",
   };
 
   // POST request to db.json
@@ -76,13 +76,13 @@ function addMember(e) {
   })
     .then((res) => res.json())
     .then((member) => {
-      // Add the new member to the list dynamically
+      // Add the new member to the list
       renderMember(member);
 
       // Reset the form
       form.reset();
 
-      // Show a little feedback
+      // This message sidplays when the member is added
       alert(`${member.name} has been added successfully!`);
     })
     .catch((err) => console.error("Error adding member:", err));
@@ -192,7 +192,7 @@ const searchBar = document.getElementById("searchMember");
 const searchBtn = document.getElementById("searchBtn");
 const searchResult = document.getElementById("searchResult");
 
-// Search function
+
 function searchMember() {
   const query = searchBar.value.trim().toLowerCase();
   if (!query) {
@@ -208,12 +208,12 @@ function searchMember() {
       );
 
       if (foundMember) {
-        displayMember(foundMember); // reuse your existing display function
+        displayMember(foundMember); 
 
-        // Optional: show a message
-        searchResult.innerHTML = <p>Showing results for <strong>${foundMember.name}</strong></p>;
+        
+        searchResult.innerHTML = `<p>Showing results for <strong>${foundMember.name}</strong></p>`;
       } else {
-        searchResult.innerHTML = <p>No member found with the name "${query}".</p>;
+        searchResult.innerHTML =`<p>No member found with the name "${query}".</p>`;
       }
     })
     .catch((err) => console.error("Error searching member:", err));
@@ -221,6 +221,7 @@ function searchMember() {
 
 // Event listener
 searchBtn.addEventListener("click", searchMember);
+
 
 fetchFounder();
 fetchTrainers();
