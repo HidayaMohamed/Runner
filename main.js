@@ -102,6 +102,7 @@ function displayOnClick(Btn, element) {
   });
 }
 
+// THis function fetches the founder details from the db.json
 function fetchFounder() {
   fetch("http://localhost:3000/founder")
     .then((res) => res.json())
@@ -109,6 +110,8 @@ function fetchFounder() {
       displayFounder(founderArr[0]);
     });
 }
+
+// This function displays the member details such as name, image etc.. 
 function displayFounder(founder) {
   founderName.textContent = founder.fullName;
   founderImage.src = founder.image;
@@ -117,6 +120,7 @@ function displayFounder(founder) {
   description.textContent = founder.description;
 }
 
+// This function fetches the trainers and passes a callback function.
 function fetchTrainers() {
   fetch("http://localhost:3000/trainers")
     .then((res) => res.json())
@@ -124,15 +128,16 @@ function fetchTrainers() {
       trainers.forEach((trainer) => renderTrainer(trainer));
     });
 }
-
+// This function Displays the trainers' names in a list, and adds an event ti li such that when clicked is passes a callback function.
 function renderTrainer(trainer) {
   const li = document.createElement("li");
   li.textContent = trainer.fullName;
   li.addEventListener("click", () => displayTrainer(trainer));
   trainersList.appendChild(li);
 }
-
+// This function displays trainer's details in a div
 function displayTrainer(trainer) {
+  // Here this shows the div since the div is hidden
   if (
     TrainersInfo.style.display === "none" ||
     TrainersInfo.style.display === ""
@@ -150,7 +155,7 @@ function displayTrainer(trainer) {
   TrainerWorkingExperience.textContent = trainer.YearsWorkedASATrainer;
   trainerDescription.textContent = trainer.description;
 }
-
+// Just like the other fetch functions, this also fetched details of the members and passes it to a callback function
 function fetchMembers() {
   fetch(" http://localhost:3000/members")
     .then((res) => res.json())
@@ -158,7 +163,7 @@ function fetchMembers() {
       members.forEach((member) => renderMember(member));
     });
 }
-
+// This function displays the memebers names in a list, add a click event to the list and finally passes a cb function 
 function renderMember(member) {
   const li = document.createElement("li");
   li.textContent = member.name;
@@ -167,7 +172,7 @@ function renderMember(member) {
   });
   membersList.appendChild(li);
 }
-
+// Displays memebers in the membersInfo div. 
 function displayMember(member) {
   if (
     membersInfo.style.display === "none" ||
@@ -188,12 +193,12 @@ function displayMember(member) {
   numberOfRaces.textContent = member.races;
   review.textContent = member.review;
 }
-
+// These are variables that store the search div
 const searchBar = document.getElementById("searchMember");
 const searchBtn = document.getElementById("searchBtn");
 const searchResult = document.getElementById("searchResult");
 
-
+// searchMember handles the search
 function searchMember() {
   const query = searchBar.value.trim().toLowerCase();
   if (!query) {
