@@ -150,6 +150,7 @@ h4, h5{
     margin: 30px 1000px;
     height: 70px;
     width: 400px;
+    cursor: pointer;
     border-radius: 1.5rem;
     font-size: 30px;
 }
