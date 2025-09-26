@@ -1,185 +1,196 @@
 {
-    "founder": [
-        {
-            "id": 1,
-            "fullName": "Dr. Amina Hassan",
-            "image": "https://images.unsplash.com/photo-1573496528388-2c5e0088d40f?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "age": 42,
-            "educationLevel": "PhD in Exercise Science",
-            "description": "Amina is the head of research and development at the Runner company. She specializes in sports physiology and designs evidence-based training programs to optimize athlete performance."
-        }
-    ],
-    "trainers": [
-        {
-            "id": 2,
-            "fullName": "Michael Otieno",
-            "image": "https://images.unsplash.com/photo-1614890085618-0e1054da74f8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "age": 38,
-            "educationLevel": "Master's in Sports Nutrition",
-            "YearsWorkedASATrainer": "15 years",
-            "description": "Michael oversees the nutrition division, creating tailored diet plans for members and guiding product development for supplements that support endurance and recovery."
-        },
-        {
-            "id": 3,
-            "fullName": "Sophia Kimani",
-            "image": "https://images.unsplash.com/photo-1563132337-f159f484226c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "age": 35,
-            "educationLevel": "Bachelor’s in Physical Therapy",
-            "YearsWorkedASATrainer": "13 years",
-            "description": "Sophia leads the rehabilitation and wellness team, helping athletes recover from injuries and ensuring members follow safe training routines."
-        }
-    ],
-    "members": [
-        {
-            "id": 1,
-            "name": "James Mwangi",
-            "image": "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "age": 27,
-            "bloodType": "O+",
-            "runningExperience": "5 years",
-            "fiveKmPR": "19:45",
-            "races": 12,
-            "review": "Strong endurance and improving pace with every race."
-        },
-        {
-            "id": 2,
-            "name": "Fatima Noor",
-            "image": "https://plus.unsplash.com/premium_photo-1683134601654-df29ecd7a90f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "age": 24,
-            "bloodType": "A-",
-            "runningExperience": "2 years",
-            "fiveKmPR": "22:10",
-            "races": 8
-        },
-        {
-            "id": 3,
-            "name": "Peter Njoroge",
-            "image": "https://images.unsplash.com/photo-1583586186393-c969aa6f5862?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "age": 31,
-            "bloodType": "B+",
-            "runningExperience": "7 years",
-            "fiveKmPR": "18:30",
-            "races": 20
-        },
-        {
-            "id": 4,
-            "name": "Lydia Wanjiru",
-            "image": "https://images.unsplash.com/photo-1602501490899-bcbc07f0c011?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "age": 29,
-            "bloodType": "AB+",
-            "runningExperience": "3 years",
-            "fiveKmPR": "21:05",
-            "races": 10
-        },
-        {
-            "id": 5,
-            "name": "Samuel Kariuki",
-            "image": "https://images.unsplash.com/photo-1563452965085-2e77e5bf2607?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fEJMQUNLJTIwTUFOfGVufDB8fDB8fHww",
-            "age": 34,
-            "bloodType": "O-",
-            "runningExperience": "10 years",
-            "fiveKmPR": "17:55",
-            "races": 25
-        },
-        {
-            "id": 6,
-            "name": "Grace Achieng",
-            "image": "https://plus.unsplash.com/premium_photo-1714034220666-08e636af7935?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "age": 26,
-            "bloodType": "A+",
-            "runningExperience": "4 years",
-            "fiveKmPR": "20:15",
-            "races": 11
-        },
-        {
-            "id": 7,
-            "name": "Brian Otieno",
-            "image": "https://plus.unsplash.com/premium_photo-1661609468880-7f6cc8b446d1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "age": 28,
-            "bloodType": "B-",
-            "runningExperience": "6 years",
-            "fiveKmPR": "19:10",
-            "races": 16
-        },
-        {
-            "id": 8,
-            "name": "Sharon Mutheu",
-            "image": "https://images.unsplash.com/photo-1658881516349-58d2822869f3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "age": 23,
-            "bloodType": "O+",
-            "runningExperience": "1 year",
-            "fiveKmPR": "23:30",
-            "races": 5
-        },
-        {
-            "id": 9,
-            "name": "Daniel Kiptoo",
-            "image": "https://images.unsplash.com/photo-1506638794690-bbea5c6f0ab7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "age": 30,
-            "bloodType": "AB-",
-            "runningExperience": "8 years",
-            "fiveKmPR": "18:05",
-            "races": 18
-        },
-        {
-            "id": 10,
-            "name": "Mary Naliaka",
-            "image": "https://images.unsplash.com/photo-1635862574705-db6e2bc5fa6e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "age": 25,
-            "bloodType": "A+",
-            "runningExperience": "3 years",
-            "fiveKmPR": "21:20",
-            "races": 9
-        },
-        {
-            "id": 11,
-            "name": "Joseph Kamau",
-            "image": "https://plus.unsplash.com/premium_photo-1723795291427-29e91ef36451?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "age": 32,
-            "bloodType": "B+",
-            "runningExperience": "9 years",
-            "fiveKmPR": "18:25",
-            "races": 22
-        },
-        {
-            "id": 12,
-            "name": "Angela Cherono",
-            "image": "https://images.unsplash.com/photo-1726195222023-9016a7250717?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "age": 27,
-            "bloodType": "O-",
-            "runningExperience": "5 years",
-            "fiveKmPR": "19:55",
-            "races": 14
-        },
-        {
-            "id": 13,
-            "name": "David Wekesa",
-            "image": "https://images.unsplash.com/photo-1646833018583-f5b60fb3efa4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "age": 29,
-            "bloodType": "AB+",
-            "runningExperience": "6 years",
-            "fiveKmPR": "19:05",
-            "races": 15
-        },
-        {
-            "id": 14,
-            "name": "Ruth Nyambura",
-            "image": "https://images.unsplash.com/photo-1722384742220-771ad0f35115?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "age": 22,
-            "bloodType": "A-",
-            "runningExperience": "2 years",
-            "fiveKmPR": "22:40",
-            "races": 7
-        },
-        {
-            "id": 15,
-            "name": "Elijah Baraka",
-            "image": "https://plus.unsplash.com/premium_photo-1712939464715-22d65c9886e0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "age": 33,
-            "bloodType": "B-",
-            "runningExperience": "11 years",
-            "fiveKmPR": "17:40",
-            "races": 27
-        }
-    ]
+  "founder": [
+    {
+      "id": 1,
+      "fullName": "Dr. Amina Hassan",
+      "image": "https://images.unsplash.com/photo-1573496528388-2c5e0088d40f?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "age": 42,
+      "educationLevel": "PhD in Exercise Science",
+      "description": "Amina is the head of research and development at the Runner company. She specializes in sports physiology and designs evidence-based training programs to optimize athlete performance."
+    }
+  ],
+  "trainers": [
+    {
+      "id": 2,
+      "fullName": "Michael Otieno",
+      "image": "https://images.unsplash.com/photo-1614890085618-0e1054da74f8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "age": 38,
+      "educationLevel": "Master's in Sports Nutrition",
+      "YearsWorkedASATrainer": "15 years",
+      "description": "Michael oversees the nutrition division, creating tailored diet plans for members and guiding product development for supplements that support endurance and recovery."
+    },
+    {
+      "id": 3,
+      "fullName": "Sophia Kimani",
+      "image": "https://images.unsplash.com/photo-1563132337-f159f484226c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "age": 35,
+      "educationLevel": "Bachelor’s in Physical Therapy",
+      "YearsWorkedASATrainer": "13 years",
+      "description": "Sophia leads the rehabilitation and wellness team, helping athletes recover from injuries and ensuring members follow safe training routines."
+    }
+  ],
+  "members": [
+    {
+      "id": 1,
+      "name": "James Mwangi",
+      "image": "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "age": 27,
+      "bloodType": "O+",
+      "runningExperience": "5 years",
+      "fiveKmPR": "19:45",
+      "races": 12,
+      "review": "Strong endurance and improving pace with every race."
+    },
+    {
+      "id": 2,
+      "name": "Fatima Noor",
+      "image": "https://plus.unsplash.com/premium_photo-1683134601654-df29ecd7a90f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "age": 24,
+      "bloodType": "A-",
+      "runningExperience": "2 years",
+      "fiveKmPR": "22:10",
+      "races": 8
+    },
+    {
+      "id": 3,
+      "name": "Peter Njoroge",
+      "image": "https://images.unsplash.com/photo-1583586186393-c969aa6f5862?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "age": 31,
+      "bloodType": "B+",
+      "runningExperience": "7 years",
+      "fiveKmPR": "18:30",
+      "races": 20
+    },
+    {
+      "id": 4,
+      "name": "Lydia Wanjiru",
+      "image": "https://images.unsplash.com/photo-1602501490899-bcbc07f0c011?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "age": 29,
+      "bloodType": "AB+",
+      "runningExperience": "3 years",
+      "fiveKmPR": "21:05",
+      "races": 10
+    },
+    {
+      "id": 5,
+      "name": "Samuel Kariuki",
+      "image": "https://images.unsplash.com/photo-1563452965085-2e77e5bf2607?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fEJMQUNLJTIwTUFOfGVufDB8fDB8fHww",
+      "age": 34,
+      "bloodType": "O-",
+      "runningExperience": "10 years",
+      "fiveKmPR": "17:55",
+      "races": 25
+    },
+    {
+      "id": 6,
+      "name": "Grace Achieng",
+      "image": "https://plus.unsplash.com/premium_photo-1714034220666-08e636af7935?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "age": 26,
+      "bloodType": "A+",
+      "runningExperience": "4 years",
+      "fiveKmPR": "20:15",
+      "races": 11
+    },
+    {
+      "id": 7,
+      "name": "Brian Otieno",
+      "image": "https://plus.unsplash.com/premium_photo-1661609468880-7f6cc8b446d1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "age": 28,
+      "bloodType": "B-",
+      "runningExperience": "6 years",
+      "fiveKmPR": "19:10",
+      "races": 16
+    },
+    {
+      "id": 8,
+      "name": "Sharon Mutheu",
+      "image": "https://images.unsplash.com/photo-1658881516349-58d2822869f3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "age": 23,
+      "bloodType": "O+",
+      "runningExperience": "1 year",
+      "fiveKmPR": "23:30",
+      "races": 5
+    },
+    {
+      "id": 9,
+      "name": "Daniel Kiptoo",
+      "image": "https://images.unsplash.com/photo-1506638794690-bbea5c6f0ab7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "age": 30,
+      "bloodType": "AB-",
+      "runningExperience": "8 years",
+      "fiveKmPR": "18:05",
+      "races": 18
+    },
+    {
+      "id": 10,
+      "name": "Mary Naliaka",
+      "image": "https://images.unsplash.com/photo-1635862574705-db6e2bc5fa6e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "age": 25,
+      "bloodType": "A+",
+      "runningExperience": "3 years",
+      "fiveKmPR": "21:20",
+      "races": 9
+    },
+    {
+      "id": 11,
+      "name": "Joseph Kamau",
+      "image": "https://plus.unsplash.com/premium_photo-1723795291427-29e91ef36451?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "age": 32,
+      "bloodType": "B+",
+      "runningExperience": "9 years",
+      "fiveKmPR": "18:25",
+      "races": 22
+    },
+    {
+      "id": 12,
+      "name": "Angela Cherono",
+      "image": "https://images.unsplash.com/photo-1726195222023-9016a7250717?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "age": 27,
+      "bloodType": "O-",
+      "runningExperience": "5 years",
+      "fiveKmPR": "19:55",
+      "races": 14
+    },
+    {
+      "id": 13,
+      "name": "David Wekesa",
+      "image": "https://images.unsplash.com/photo-1646833018583-f5b60fb3efa4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "age": 29,
+      "bloodType": "AB+",
+      "runningExperience": "6 years",
+      "fiveKmPR": "19:05",
+      "races": 15
+    },
+    {
+      "id": 14,
+      "name": "Ruth Nyambura",
+      "image": "https://images.unsplash.com/photo-1722384742220-771ad0f35115?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "age": 22,
+      "bloodType": "A-",
+      "runningExperience": "2 years",
+      "fiveKmPR": "22:40",
+      "races": 7
+    },
+    {
+      "id": 15,
+      "name": "Elijah Baraka",
+      "image": "https://plus.unsplash.com/premium_photo-1712939464715-22d65c9886e0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "age": 33,
+      "bloodType": "B-",
+      "runningExperience": "11 years",
+      "fiveKmPR": "17:40",
+      "races": 27
+    },
+    {
+      "name": "Frah Abdi",
+      "image": "https://www.shutterstock.com/shutterstock/photos/1479128459/display_1500/stock-photo-chhetah-resting-in-the-grass-masai-mara-national-park-kenya-1479128459.jpg",
+      "age": "23",
+      "bloodType": "B+",
+      "runningExperience": "2 years",
+      "fiveKmPR": "30.33",
+      "races": "4",
+      "review": "New member – no reviews yet",
+      "id": 16
+    }
+  ]
 }

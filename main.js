@@ -50,6 +50,46 @@ const pr = document.getElementById("pr");
 const races = document.getElementById("races");
 const submitBtn = document.getElementById("submit");
 
+// Function to handle new member form submission
+function addMember(e) {
+  e.preventDefault(); // prevent page reload
+
+  // Create a new member object from the form inputs
+  const newMember = {
+    name: name.value,
+    image: image.value,
+    age: age.value,
+    bloodType: NewBloodType.value,
+    runningExperience: experience.value,
+    fiveKmPR: pr.value,
+    races: races.value,
+    review: "New member – no reviews yet",
+  };
+
+  // POST request to db.json
+  fetch("http://localhost:3000/members", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(newMember),
+  })
+    .then((res) => res.json())
+    .then((member) => {
+      // Add the new member to the list dynamically
+      renderMember(member);
+
+      // Reset the form
+      form.reset();
+
+      // Show a little feedback
+      alert(`${member.name} has been added successfully!`);
+    })
+    .catch((err) => console.error("Error adding member:", err));
+}
+
+// Attach submit event
+form.addEventListener("submit", addMember);
 
 function displayOnClick(Btn, element) {
   Btn.addEventListener("click", () => {
@@ -147,6 +187,40 @@ function displayMember(member) {
   numberOfRaces.textContent = member.races;
   review.textContent = member.review;
 }
+
+const searchBar = document.getElementById("searchMember");
+const searchBtn = document.getElementById("searchBtn");
+const searchResult = document.getElementById("searchResult");
+
+// Search function
+function searchMember() {
+  const query = searchBar.value.trim().toLowerCase();
+  if (!query) {
+    searchResult.innerHTML = "<p>Please enter a name to search.</p>";
+    return;
+  }
+
+  fetch("http://localhost:3000/members")
+    .then((res) => res.json())
+    .then((members) => {
+      const foundMember = members.find(
+        (member) => member.name.toLowerCase() === query
+      );
+
+      if (foundMember) {
+        displayMember(foundMember); // reuse your existing display function
+
+        // Optional: show a message
+        searchResult.innerHTML = <p>Showing results for <strong>${foundMember.name}</strong></p>;
+      } else {
+        searchResult.innerHTML = <p>No member found with the name "${query}".</p>;
+      }
+    })
+    .catch((err) => console.error("Error searching member:", err));
+}
+
+// Event listener
+searchBtn.addEventListener("click", searchMember);
 
 fetchFounder();
 fetchTrainers();
