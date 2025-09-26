@@ -21,9 +21,9 @@ Git clone https://github.com/HidayaMohamed/Runner
 ```
 
 ## Technologies used
-HTML
-CSS
-Github
+HTML                                            
+CSS                                             
+Github                                         
 Javascript
 
 ## Support and contact details
