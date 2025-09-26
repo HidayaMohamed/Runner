@@ -51,8 +51,6 @@ const races = document.getElementById("races");
 const submitBtn = document.getElementById("submit");
 
 
-
-
 function displayOnClick(Btn, element) {
   Btn.addEventListener("click", () => {
     if (element.style.display === "none" || element.style.display === "") {
