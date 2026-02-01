@@ -1,174 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RUNNER</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="container">
-        <div class="heading">
-          <h3>RUNNER</h3>
-          <h1>Take your running to the <span class="h1">next level</span></h1>
-          <p id="p1">
-            Whatever your current or desired fitness level is, we'll give you the
-            support and guidance you need to reach your goals.
-          </p>
-        </div>
-        <div class="Join">
-          <h4>Why Join Runner?</h4>
-          <p id="p2">
-            <span class="point"> 1.	Community Support & Motivation</span> <br>
-	•	Members become part of a close-knit community where everyone encourages each other.<br>
-	•	Whether you’re a beginner or experienced runner, the group keeps you motivated and accountable. <br>
-	  <span class="point">2.	Access to Better Training Programs</span><br>
-	•	Runners get structured training plans designed by knowledgeable coaches.<br>
-	•	This helps improve endurance, speed, and technique more effectively than training alone.<br>
-	   <span class="point">3.	Shared Experiences & Growth</span><br>
-	•	From group runs to events, you gain friends who share your fitness goals. <br>
-	•	The journey becomes more fun, less lonely, and filled with learning from others’ experiences.
-          </p>
-        </div>
-        <div class="trainers">
-          <h4 id="h4">Trainers</h4>
-          <p id="p3">At Runner, training goes beyond just logging miles — it’s about structured programs designed to fit every fitness level. From beginner-friendly plans that build consistency to advanced sessions focused on speed and endurance, Runner offers guidance that helps members train smarter, not just harder. With expert-designed routines, group workouts, and tips on recovery and nutrition, training becomes a holistic experience. Whether your goal is fitness, competition, or simply enjoying the run, Runner ensures you have the right support and plan to get there</p>
-          <button id="TrainersBtn">View trainers</button>
-          <div class="T">
-          <div id="trainers">
-            <ul id="trainersList"></ul>
-          </div>
-          <div id="TrainersInfo">
-            <h5 id="TrainerName"></h5>
-            <img id="ImageTrainer" src="" alt="" width="500px" height="600px""/>
-            <p><strong>Age:</strong><span id="trainerAge"></span></p>
-            <p>
-            <strong>Education level</strong><span id="trainerEducationLevel"></span>
-            </p>
-            <p>
-            <strong>Years worked as a trainer:</strong><span id="TrainerWorkingExperience"></span>
-            </p>
-            <p>
-            <strong>Brief introduction:</strong
-            ><span id="trainerDescription"></span>
-            </p>
-          </div>
-          </div>
-        </div>
-        <div class="members">
-          <h4>Members</h4>
-          <p id="p4">Runner members are a diverse group of fitness enthusiasts, from complete beginners taking their first strides to seasoned runners aiming for personal bests. They come together with one goal — to support each other, stay motivated, and grow stronger as a community. Each member brings their own story, energy, and determination, making Runner not just a training hub, but a family of runners who uplift one another.</p>
-          <button id="MembersBtn">View members</button>
-        <div class="T">
-          <div id="members">
-            <ul id="membersList"></ul>
-          </div>
-          <div id="membersInfo">
-            <h5 id="memberName"></h5>
-            <img id="memberImage" src="" alt="" width="400px" height="400px"/>
-            <p><strong>Age:</strong><span id="memberAge"></span></p>
-             <p><strong>Blood type:</strong><span id="member-blood-type"></span></p>
-            <p>
-            <strong>Running experience:</strong><span id="runningExperience"></span>
-            </p>
-            <p><strong>Five Km Pr:</strong><span id="5kmPr"></span></p>
-            <p><strong>Races:</strong><span id="numberOfRaces"></span></p>
-          </div>
-          <div id="search">
-          <input type="text" id="searchMember" placeholder="Search member by name..." />
-           <button id="searchBtn">Search</button>
-           <div id="searchResult"></div>
-           </div>
-        </div>
-        </div>
-        <div class="form">
-          <h4>Join Runner!</h4>
-          <p id="p5">
-            Join Runner today — your community, your training, your journey.
-          </p>
-          <button id="signUp">Sign Up for Runner</button>
-          <form id="form">
-            <h6>Enter your details down below</h6>
-            <input type="text" id="name" placeholder="Full name" />
-            <input type="text" id="image" placeholder="image URL" />
-            <input type="number" id="age" placeholder="Age" />
-            <input type="text" id="blood-type" placeholder="Blood type" />
-            <input
-              type="text"
-              id="experience"
-              placeholder="Running Experience in years"
-             />
-            <input type="text" id="pr" placeholder="5Km pr" />
-            <input
-              type="number"
-              id="races"
-              placeholder="Number of races participated in"
-            />
-            <button type="submit" id="submit">Submit</button>
-          </form>
-        </div>
-        <div class="founder">
-          <p id="p6">Runner began in 2022 as a small circle of fitness lovers who simply enjoyed running together. What started as weekend jogs quickly grew into a community built on encouragement, accountability, and fun. Today, Runner brings people of all levels together — whether you’re chasing your first 5K or pushing for a marathon, you’ll find better training, supportive teammates, and a place where every step counts</p>
-          <button id="founderBtn">View founder</button>
-          <div id="founderDiv">
-            <h2>Founder</h2>
-          <h5 id="fullName"></h5>
-          <img id="founderImage" src="" alt="Founder image" width="700px" height="700px"/>
-          <p><strong>Age:</strong><span id="founderAge"></span></p>
-          <p>
-          <strong>Education level:</strong><span id="educationLevel"></span>
-          </p>
-          <p>
-          <strong>Brief introduction:</strong><span id="description"></span>
-          </p>
-          </div>
-       </div>
-      
-       <div id="about">
-          <h5>About Runner</h5>
-          <p id="p7">
-          Runner App is a lightweight fitness companion that lets you explore a
-          list of passionate runners and the company founders who guide them.
-          Each runner has their own profile with personal stats like age, blood
-          type, running experience, 5km personal record, number of races
-          completed, and reviews that highlight their journey. You can view
-          details about each runner, get inspired by their progress, and learn
-          about the experts behind the fitness company. The app is designed to
-          be simple, interactive, and motivating for anyone interested in
-          running and fitness.
-         </p>
-       </div>
-       <div id="userReview">
-          <div id="Rev">
-            <h3>Reviews from users -> </h5>
-          </div>
-          <div id="comments">
-            <h5>Lydia Wanjiru</h5>
-            <p class="Comments">“Runner is a game-changer for runners! The personalized training plans are incredibly effective, helping me improve my pace and endurance in just weeks. The community is welcoming, motivating, and backed by expert coaching. If you’re serious about running faster and smarter, Runner is a must-join! ”</p>
-            <h5>Joseph Kamau</h5>
-            <p class="Comments">"Great personalized running plan so I can really be intentional with my training! The Runna team have all been super responsive and helpful making sure the plan and paces are right for me, and there to answer any questions. Great value, would highly recommend!"</p>
-          </div>
-          <div id="Contact">
-            <h5>Contact Us Runner</h5>
-    <p>
-      We’d love to hear from you! Whether you have questions about our training programs, 
-      need support, or just want to connect with the Runner community, here’s how you can reach us:
-    </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Runner — Fitness Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <div class="contact-info">
-      <p><strong> Office Address:</strong> Runner HQ, 123 Freedom Street, Nairobi, Kenya</p>
-      <p><strong> Email:</strong> <a href="mailto:support@runner.com" target="_self">support@runner.com</a></p>
-      <p><strong> Phone:</strong> <a href="tel:+254700123456" target="_self">+254 700 123 456</a></p>
-      <p><strong> Social Media:</strong></p>
-      <ul>
-        <li><a href="http://instagram.com/runner_official" target="_self">Instagram: @runner_official</a></li>
-        <li><a href="http://twitter.com/runnerHQ" target="_self">Twitter (X): @runnerHQ</a></li>
-        <li><a href="http://facebook.com/runnercommunity" target="_self">Facebook: Runner Community</a></li>
-      </ul>
+  <!-- NAVBAR -->
+  <nav>
+    <h3>RUNNER</h3>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#join">Why Join</a></li>
+      <li><a href="#trainers-section">Trainers</a></li>
+      <li><a href="#members-section">Members</a></li>
+      <li><a href="#form-section">Sign Up</a></li>
+      <li><a href="#founder-section">Founder</a></li>
+      <li><a href="#reviews-section">Reviews</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="heading">
+    <h1>Take your running to the <span>next level</span></h1>
+    <p>
+      Whatever your current or desired fitness level, Runner gives you the
+      guidance and support you need to reach your goals.
+    </p>
+  </section>
+
+  <!-- JOIN SECTION -->
+  <section id="join" class="Join">
+    <h2>Why Join Runner?</h2>
+    <p>
+      <strong>1. Community Support & Motivation</strong><br>
+      Members become part of a close-knit community where everyone encourages each other.<br>
+      Beginner or experienced, the group keeps you motivated.<br><br>
+      <strong>2. Access to Better Training Programs</strong><br>
+      Structured training plans designed by knowledgeable coaches.<br>
+      Improve endurance, speed, and technique effectively.<br><br>
+      <strong>3. Shared Experiences & Growth</strong><br>
+      From group runs to events, gain friends who share your goals.<br>
+      The journey is fun, less lonely, and filled with learning.
+    </p>
+  </section>
+
+  <!-- TRAINERS SECTION -->
+  <section id="trainers-section" class="trainers">
+    <h2>Trainers</h2>
+    <button id="TrainersBtn">View Trainers</button>
+    <div class="T">
+      <ul id="trainersList"></ul>
+      <div id="TrainersInfo">
+        <h5 id="TrainerName"></h5>
+        <img id="ImageTrainer" src="" alt="" />
+        <p><strong>Age:</strong> <span id="trainerAge"></span></p>
+        <p><strong>Education level:</strong> <span id="trainerEducationLevel"></span></p>
+        <p><strong>Years worked as trainer:</strong> <span id="TrainerWorkingExperience"></span></p>
+        <p><strong>Introduction:</strong> <span id="trainerDescription"></span></p>
+      </div>
     </div>
-          </div>
-       </div>
+  </section>
+
+  <!-- MEMBERS SECTION -->
+  <section id="members-section" class="members">
+    <h2>Members</h2>
+    <button id="MembersBtn">View Members</button>
+    <div class="T">
+      <ul id="membersList"></ul>
+      <div id="membersInfo">
+        <h5 id="memberName"></h5>
+        <img id="memberImage" src="" alt="" />
+        <p><strong>Age:</strong> <span id="memberAge"></span></p>
+        <p><strong>Blood type:</strong> <span id="member-blood-type"></span></p>
+        <p><strong>Running experience:</strong> <span id="runningExperience"></span></p>
+        <p><strong>5Km PR:</strong> <span id="5kmPr"></span></p>
+        <p><strong>Races:</strong> <span id="numberOfRaces"></span></p>
+      </div>
+      <div id="search">
+        <input type="text" id="searchMember" placeholder="Search member by name..." />
+        <button id="searchBtn">Search</button>
+        <div id="searchResult"></div>
+      </div>
     </div>
-    <script src="main.js"></script>
-  </body>
+  </section>
+
+  <!-- SIGN UP FORM -->
+  <section id="form-section" class="form">
+    <h2>Join Runner</h2>
+    <button id="signUp">Sign Up for Runner</button>
+    <form id="form">
+      <h6>Enter your details</h6>
+      <input type="text" id="name" placeholder="Full name" />
+      <input type="text" id="image" placeholder="Image URL" />
+      <input type="number" id="age" placeholder="Age" />
+      <input type="text" id="blood-type" placeholder="Blood type" />
+      <input type="text" id="experience" placeholder="Running Experience (years)" />
+      <input type="text" id="pr" placeholder="5Km PR" />
+      <input type="number" id="races" placeholder="Number of races" />
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- FOUNDER SECTION -->
+  <section id="founder-section" class="founder">
+    <h2>Founder</h2>
+    <button id="founderBtn">View Founder</button>
+    <div id="founderDiv">
+      <h5 id="fullName"></h5>
+      <img id="founderImage" src="" alt="Founder image"/>
+      <p><strong>Age:</strong> <span id="founderAge"></span></p>
+      <p><strong>Education:</strong> <span id="educationLevel"></span></p>
+      <p><strong>Introduction:</strong> <span id="description"></span></p>
+    </div>
+  </section>
+
+  <!-- USER REVIEWS -->
+  <section id="reviews-section" class="userReview">
+    <h2>User Reviews</h2>
+    <div id="Rev">
+      <h3>Reviews from users</h3>
+    </div>
+    <div id="comments">
+      <h5>Lydia Wanjiru</h5>
+      <p class="Comments">“Runner is a game-changer! Personalized training plans and motivating community.”</p>
+      <h5>Joseph Kamau</h5>
+      <p class="Comments">"Great plans and super responsive team. Highly recommend!"</p>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About Runner</h2>
+    <p>
+      Runner App is a lightweight fitness companion that lets you explore passionate runners and the founders who guide them. View stats, track progress, and get motivated by expert training plans.
+    </p>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Reach out with questions or just connect with the community.</p>
+    <p><strong>Office:</strong> Runner HQ, 123 Freedom Street, Nairobi, Kenya</p>
+    <p><strong>Email:</strong> <a href="mailto:support@runner.com">support@runner.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+254700123456">+254 700 123 456</a></p>
+    <p><strong>Social:</strong></p>
+    <ul>
+      <li><a href="http://instagram.com/runner_official">Instagram: @runner_official</a></li>
+      <li><a href="http://twitter.com/runnerHQ">Twitter (X): @runnerHQ</a></li>
+      <li><a href="http://facebook.com/runnercommunity">Facebook: Runner Community</a></li>
+    </ul>
+  </section>
+
+  <script src="main.js"></script>
+</body>
 </html>

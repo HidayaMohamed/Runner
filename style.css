@@ -1,285 +1,271 @@
+/* GLOBAL RESET */
 * {
     box-sizing: border-box;
-    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
-body{
-    margin: 10px auto;
-    background-image: url();
+
+body {
+    background: #f4f7f8;
+    color: #333;
+    line-height: 1.6;
 }
-.heading, .Join, .trainers, .members, .form, .founder, #about, #userReview {
-    display: block;
-   
-} 
-.heading {
-    margin-top: 0px;
-    background-color: rgb(66, 60, 60);
-    padding-bottom: 5px;
-}
-.Join {
-    background-color: #63632f;
-    padding-bottom: 20px;
-}
-.trainers {
-    background-color: rgb(96, 96, 138);
-}
-.members{
-    background-color: aliceblue;
-}
-.form {
-    background-color: burlywood;
-}
-.founder {
-    background-color: goldenrod;
-}
-#userReview {
-    width: 100%;
+
+/* NAVBAR */
+nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-#Rev {
-    margin-left:50px;
-    margin-top: 75px;
-    background-color: rgb(38, 122, 122);
-    width: 600px ;
-    height: 400px;
-    margin-bottom: 10px;
-    padding-top: 100px;
-    padding-left: 150px;
+
+nav h3 {
+    color: #0077ff;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0077ff;
+}
+
+/* HERO */
+.heading {
     text-align: center;
-    border-radius: 1rem;
+    padding: 120px 20px 80px 20px;
+    background: linear-gradient(to right, #0077ff, #00d4ff);
+    color: #fff;
 }
-#Rev > h3 {
-    width: 300px;
+
+.heading h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.heading h1 span {
+    color: #ffd166;
+}
+
+.heading p {
+    font-size: 22px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 20px;
+}
+
+section h2 {
+    text-align: center;
     font-size: 40px;
-}
-#comments {
-    margin-right: 50px;
-    color: #e9e4de;
-    background-color: rgb(235, 186, 186);
-    font-size: 80%;
-    width: 700px;
-    height: 600px;
-    margin-top: 10px;
-    border-radius: 1rem;
-}
-.Comments {
-    font-size: 25px;
+    margin-bottom: 40px;
+    color: #0077ff;
+    position: relative;
 }
 
-#about{
-    background-color: #e9d7cf;
-    border-radius: 1rem; 
-    padding-bottom: 20px;  
+section h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #ffd166;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
 }
-h3 {
-    color: cornsilk;
-    width: 150px;
-    font-size: 30px;
-    text-decoration: underline;
-    font-style: italic;
-    margin-left: 10px;
 
-}
-h1 {
-    font-size: 70px;
-    font-weight: 50px;
-    font-style: italic;
-    margin: 30px auto;
-    color: aliceblue;
-    text-decoration: underline;
-    width: 700px;
+/* JOIN SECTION */
+.Join {
+    background: #0077ff;
+    color: #fff;
     text-align: center;
+    border-radius: 15px;
+    padding: 60px 20px;
 }
-.h1  {
-    color: salmon;
-}
-#p1 {
-    font-size: 30px;
-    color: floralwhite;
-    text-align: center;
-    margin-bottom: 50px;
 
+.Join h4 {
+    font-size: 36px;
+    margin-bottom: 30px;
 }
-.Join > h4 {
-    font-size: 40px;
-    color: gold;
+
+.Join p, .point {
+    font-size: 22px;
+    line-height: 1.6;
 }
-#p2 {
-    text-align: center;
-    color: white;
-    font-size: 30px;
-}
+
 .point {
-    color: azure;
-    text-decoration: underline;
-    font-size: 40px;
-    margin: 15px 30px;
+    font-weight: bold;
+    color: #ffd166;
+    display: block;
+    margin-top: 20px;
 }
-#h4 {
-   font-size: 50px;
-   color: #ddd;
-   text-decoration: underline;
-}
-#p3 {
-    color: bisque;
-    font-size: 30px;
-}
-.T {
-   display: flex;
-   gap: 150px;
-}
-h4, h5{
-    font-style: italic;
-    font-size: 50px;
-    padding-top: 30px;
-    margin-bottom: 10px;
-    text-align: center;
-    text-decoration: underline;
-} 
-#p4, #p5, #p6, #p7{
-    margin: 20px;
-    font-size: 30px;
-}
-#p5, #p6 {
-    padding-top: 20px;
-    text-align: center;
-    font-size: 35px;
-}
-#signUp, #MembersBtn, #TrainersBtn, #founderBtn {
-    font-weight: 30px;
-    font-style: italic;
-    margin: 30px 1000px;
-    height: 70px;
-    width: 400px;
-    cursor: pointer;
-    border-radius: 1.5rem;
-    font-size: 30px;
-}
-#signUp {
-    color: white;
-    background-color: rgb(136, 120, 95);
-}
-#MembersBtn {
-    background-color: cornflowerblue;
-}
-#TrainersBtn {
-    background-color: rgb(105, 165, 165);
-}
-#founderBtn {
-    background-color: honeydew;
-    color: black;
-}
-#TrainersInfo, #membersInfo, #trainers, #members, #founderDiv, #search{
-    color: azure;
-    font-size: 30px;
-    display: none;
 
+/* TRAINERS & MEMBERS */
+.T {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 30px;
 }
-#founderDiv{
-    width: 900px;
-    font-size: 30px;
-    margin-left: 500px;
-}
-#TrainersInfo {
-    width: 800px;
-    margin-left: 300px;
-    margin-top: 0px;
-}
-#membersInfo {
-    width: 800px;
-    margin-left: 150px;
-}
+
 #trainersList li, #membersList li {
-      cursor: pointer;
-      display: flex;
-      width: 300px;
-      height: 40px;
-      margin: 10px;
-      margin-top: 60px;
-      margin-bottom: 10px;
-      font-size: 30px;
-      border-radius: 8px;
-      padding-left: 10px;
-      padding-bottom: 10px;
-      background-color: #9dcdec;
+    cursor: pointer;
+    background: #f4f4f4;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+    list-style: none;
+    font-weight: 500;
 }
-#membersList  {
-    margin-top: 100px;
+
+#trainersList li:hover, #membersList li:hover {
+    background: #0077ff;
+    color: #fff;
 }
-#membersList li {
-    
-     margin-top: 0px;
+
+#TrainersInfo, #membersInfo, #founderDiv, #trainers, #members, #search {
+    display: none;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
+#TrainersInfo img, #membersInfo img, #founderDiv img {
+    width: 50px;     /* set width */
+    height: 50px;    /* set height */
+    border-radius: 50%; /* make them circular */
+    object-fit: cover;  /* crop nicely if not square */
+    margin-bottom: 10px;
+}
+
+/* BUTTONS */
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#signUp { background: #ffd166; color: #333; }
+#MembersBtn { background: #00d4ff; color: #fff; }
+#TrainersBtn { background: #0077ff; color: #fff; }
+#founderBtn { background: #ff6f61; color: #fff; }
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* FORM */
 form {
     display: none;
-    background-color: rgb(190, 183, 173);
-    border-radius: 0.5rem;
-    width: 400px;
-    height: 600px;
-    margin: 10px auto;
-    margin-bottom: 30px;
-    
-}
-input, #submit{
-    height: 45px;
-    width: 350px;
-    margin-left: 22px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    padding: 5px;
-    border-radius: 0.5rem;
-    background-color: #e9e4de;
-}
-input::placeholder{
-    font-size: 25px;
-    color: black;
-}
-#searchMember, #name, #age, #blood-type, #experience, #pr, #races {
-    font-size: 25px;
-} 
-#submit {
-    font-size: 25px;
-    height: 55px;
-    color: black;
-}
-h5 {
-    font-style: italic;
-    text-decoration: underline;
-    border-radius: 5px;
-    margin: 15px;
-}
-h6 {
-    font-weight: 30px;
-    font-style: italic;
-    margin: 30px auto;
-    text-align: center;
-    padding-top: 20px;
-    font-size: 30px;
-    border-radius: 0.5rem;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-p {
-    font-style: oblique;
-    margin: 15px;
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
 }
-h2 {
-    text-decoration: underline;
-    font-style: italic;
-    font-weight: 50px;
-    background-color: #e9627f;
-    border-radius: 5px;
-    border-bottom: #e9e4de;
-    width:200px;
-    margin: 50px auto;
+
+form button#submit {
+    background: #0077ff;
+    color: #fff;
+    width: 100%;
 }
+
+/* USER REVIEWS */
+#userReview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+#Rev, #comments {
+    flex: 1 1 400px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.Comments {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* ABOUT SECTION */
+#about {
+    background: #fff3e0;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+}
+
+/* CONTACT */
 #Contact {
-    background-color: burlywood;
-    border-radius: 1rem;
-    font-size: 30px;
-    width: 700px;   
-    margin-top: 10px;
+    background: #f4f4f4;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
 }
-#searchBtn {
-    font-size: 20px;
-    width: 100px;
-    height: 30px;
+
+#Contact a {
+    color: #0077ff;
+    text-decoration: none;
+}
+
+#Contact a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .T { flex-direction: column; gap: 20px; }
+    #userReview { flex-direction: column; }
+}
+
+@media (max-width: 576px) {
+    h1 { font-size: 42px; }
+    h4 { font-size: 28px; }
+    h5 { font-size: 22px; }
+    p, .point { font-size: 16px; }
+    button { font-size: 16px; padding: 10px 20px; }
+    form { width: 90%; padding: 20px; }
 }
