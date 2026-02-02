@@ -5,18 +5,31 @@
 #### By *Hidaya Mohamed Mohamud*
 
 ## Description
-Runner is a web application designed to help runners, trainers, and fitness enthusiasts connect, track workouts, and manage training sessions. The platform provides a clean, responsive interface for users to monitor progress and interact with trainers.
+Runner is a simple, interactive fitness platform focused on running enthusiasts. It connects runners with trainers, showcases community members, and encourages users to join a supportive running community.
+
+The platform is built using HTML, CSS, and JavaScript, making it lightweight, beginner-friendly, and easy to extend.
 ## Features 
+Navigation Bar
 
-User-friendly dashboard for runners and trainers
+Smooth navigation to all sections:
 
-Create, track, and manage training sessions
+Home
 
-Responsive design that works on desktop and mobile
+Why Join
 
-Interactive UI with smooth navigation
+Trainers
 
-Structured with reusable HTML, CSS, and JavaScript components
+Members
+
+Sign Up
+
+Founder
+
+Reviews
+
+About
+
+Contact
 
 ## Technologies used
 HTML                                            
@@ -24,16 +37,16 @@ CSS
 Github                                         
 Javascript
 
-## Live Demo
-
 
 ## How to run localy 
 1. Clone the repository
    git clone https://github.com/HidayaMohamed/Runner.git
-2. Open index.html in your browser
-   cd Runner
+2. Start the db.json by running this command
+   json-server --watch db.json 
+3. cd Runner
    open index.html
-3. Use Live Server in VS Code for automatic reloads.
+   Open index.html in your browser
+4. Use Live Server in VS Code for automatic reloads.
 
 ## Installation Requirements
 Git                                             
@@ -46,7 +59,6 @@ Connect a backend (Flask/Python) for dynamic data management
 
 Add authentication for users and trainers
 
-Deploy a live version for public access
 
 ## Support and contact details
 GitHub - github.com/HidayaMohamed               
